@@ -94,6 +94,8 @@ ion-icon{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .story{
@@ -107,9 +109,7 @@ ion-icon{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 }
 
 .caixa-stories{
@@ -120,13 +120,24 @@ ion-icon{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     display:flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
+    overflow-x: hidden;
+   
 }
-
+.seta{
+    position: absolute;
+    right: 10px;
+}
+.seta ion-icon{
+    color: 
+    rgba(255, 255, 255, 1);
+   
+}
 .coluna-post{
     width: 614px;
-    height: 719px;
+    height: auto;
     margin-top: 24px;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -167,7 +178,7 @@ ion-icon{
 }
 
 .rodapé-post{
-    height: 46px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,13 +195,71 @@ ion-icon{
     justify-content: space-between;
     align-items: center;
 }
+.curtidas{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.curtidas p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 5px;
+}
 
-.sidebar{
-    width: 293px;
-    margin-left: 29px;
-    margin-top: 30px;
+.curtidas img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+strong{
+    font-weight: bold;
+}
+.comentarios{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.coment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+input{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+button{
+    background-color: #B2DFFC;
+    border:0 none;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: #0095F6;
+    transition-duration: 3s;
+}
+.sidebar{
+    width: 293px;
+    margin-left: 644px;
+    top: 98px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
 }
 
 .topo-sidebar{
@@ -353,6 +422,8 @@ ion-icon{
         margin-top: 54px;
         background: #E5E5E5;
         border-radius: 0px;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
     }
     .coluna-post img{
         width: 100%;
@@ -365,5 +436,12 @@ ion-icon{
         align-items: center;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .curtidas img{
+        height: 20px;
+        width: 20px;
+    }
+    video{
+        width: 100%;
     }
 }
